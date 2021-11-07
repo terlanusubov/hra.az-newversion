@@ -40,7 +40,17 @@ li{
 header{
    background: #fff;
 }
-
+.sidebar-button{
+    display: none;
+    font-size:2.5em;
+    position: absolute;
+    top:49%;
+    transform: translateY(-50%);
+    right:0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
 nav{
     justify-content: center;
     display: flex;
@@ -62,6 +72,7 @@ nav{
 }
 .header-row{
     align-items: baseline;
+    position: relative;
 }
 #search-wrapper{
     display: flex;
@@ -83,6 +94,7 @@ input[name="search"]{
     border:1px solid #03a9f4;
     border-right:0px;
     outline: 0px;
+    width: 100%;
     /* border-top-left-radius: 5px; */
     /* border-bottom-left-radius: 5px; */
 } 

@@ -1,0 +1,26 @@
+@media only screen and (max-width:1200px){
+    #courses{
+        transform: translateY(0);
+    }
+}
+@media only screen and (max-width:992px){
+    nav.navigation-bar{
+        display: none;
+    }
+    #search-wrapper input{
+        width: 50%;
+    }
+    #search-wrapper #search-button{
+        margin-right:70px;
+    }
+    .sidebar-button{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    #search-wrapper{
+        display: none;
+    }
+}
+
