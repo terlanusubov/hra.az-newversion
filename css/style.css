@@ -1,0 +1,217 @@
+/* My Defaults */
+*{
+    margin:0;
+    padding: 0;
+    font-family: comforta;
+}
+a{
+    text-decoration: none!important;
+}
+li{
+    list-style-type: none!important;
+}
+@font-face {
+    font-family: comforta;
+    src: url('../fonts/Comfortaa-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: comfortaBold;
+    src: url('../fonts/Comfortaa-Bold.ttf');
+}
+@font-face {
+    font-family: comfortaSemiBold;
+    src: url('../fonts/Comfortaa-SemiBold.ttf');
+}
+@font-face {
+    font-family: comfortaLight;
+    src: url('../fonts/Comfortaa-Light.ttf');
+}
+@font-face {
+    font-family: comfortaMedium;
+    src: url('../fonts/Comfortaa-Medium.ttf');
+}
+@font-face {
+    font-family: comfortaRegular;
+    src: url('../fonts/Comfortaa-Regular.ttf');
+}
+/* End My defaults */
+
+/* Header start */
+header{
+   background: #fff;
+}
+
+nav{
+    justify-content: center;
+    display: flex;
+}
+#logo-wrapper img{
+    width: 100px;
+}
+.nav-list-wrapper{
+    margin:0;
+    display: flex;
+}
+.nav-list-item > a{
+    color:#3f3a64;
+    font-size: 16px;
+    padding:32px 20px;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+}
+.header-row{
+    align-items: baseline;
+}
+#search-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-list-item > a > svg{
+    position: absolute;
+    top: 50%;
+    right:3%;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
+/* .nav-list-item > a:hover{
+    color:#03a9f4;
+    transition: color 0.3s ease-in-out;
+} */
+input[name="search"]{
+    padding:9px 0px 9px 10px;
+    border:1px solid #03a9f4;
+    border-right:0px;
+    outline: 0px;
+    /* border-top-left-radius: 5px; */
+    /* border-bottom-left-radius: 5px; */
+} 
+#search-button{
+    display: flex;
+    align-items: center;
+    padding:0px 15px;
+    border:1px solid #03a9f4;
+    border-left:0px;
+    /* border-top-right-radius: 5px; */
+    /* border-bottom-right-radius: 5px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    background-color: #fff;
+}
+#search-button svg{
+    color:#03a9f4;
+}
+#search-button:hover{
+    background-color: #03a9f4;
+    transition: background-color 0.3s ease-in-out;
+}
+#search-button:hover svg{
+    color:#fff;
+}
+
+/* Header end */
+
+/* Intro start */
+#intro{
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    overflow: hidden;
+}
+.intro-content{
+    background-color: #fff;
+    padding:50px 20px;
+}
+#intro h1{
+    color:#03a9f4;
+    font-weight: 700;
+}
+#intro p{
+    color:#03a9f4;
+    line-height: 1.6em;
+    font-size:20px
+}
+.curve{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background-color: #fff;
+}
+/* Intro end */
+
+
+/* Courses start */
+#courses{
+    z-index:2;
+    margin-bottom:50px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    transform: translateY(-10%);
+    background-color: #fff;
+    padding-top:50px;
+}
+.title{
+    text-align: center;
+    margin-bottom:100px;
+}
+.title > span{
+    color:#8c89a2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size:16px;
+}
+.title h2{
+    font-family: comfortaBold;
+    font-weight: 700;
+}
+.title h2 span{
+    color:#03a9f4;
+}
+.course-item-wrapper{
+    padding:15px;
+}
+.course-item-content{
+    text-align: center;
+    padding:35px 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.course-item-content:hover{
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.course-item-content:hover a{
+    color:#03a9f4;
+    transition: color 0.3s ease-in-out;
+}
+.course-item-content h3{
+    font-size: 1.5em;
+    margin:10px 0px;
+}
+.course-item-content p{
+    font-size: 15px;
+}
+.course-item-content > svg{
+    width: 50px;
+    height: 50px;
+}
+.course-item-content a{
+    color:#3f3a64;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.3s ease-in-out
+}
+.course-item-content a svg{
+    font-size: 8px;
+    position: absolute;
+    top:50%;
+    right:-20%;
+    transform: translateY(-50%);
+ }
