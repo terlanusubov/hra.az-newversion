@@ -36,6 +36,29 @@ li{
 }
 /* End My defaults */
 
+/* Animations */
+
+@keyframes Scale{
+    0%{
+        transform: scale(0,0);
+        opacity: 0;
+    }
+    80%{
+        transform: scale(1,1);
+        opacity: 1;
+    }
+    90%{
+        transform: scale(0.9,0.9);
+    }
+    100%{
+        transform: scale(1,1);
+
+    }
+}
+
+/* End Animations */
+
+
 /* Header start */
 header{
    background: #fff;
@@ -170,6 +193,10 @@ input[name="search"]{
 .title{
     text-align: center;
     margin-bottom:100px;
+    animation-name: Scale;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 .title > span{
     color:#8c89a2;
@@ -186,6 +213,14 @@ input[name="search"]{
 }
 .course-item-wrapper{
     padding:15px;
+    transform: scale(0,0);
+    
+}
+.course-item-wrapper.animated{
+    animation-name: Scale;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 .course-item-content{
     text-align: center;
